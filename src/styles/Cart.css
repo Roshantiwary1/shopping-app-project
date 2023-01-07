@@ -1,0 +1,22 @@
+.table tbody tr td img{
+    width: 80px!important;
+    height: 80px!important;
+    object-fit: contain;
+}
+
+td,th{
+    color: var(--primary-color);
+}
+
+.checkout__btn{
+    margin-top: 17px!important;
+}
+
+.subtotal{
+    margin-left: 20px;
+}
+
+.heading{
+    font-weight: 600;
+    color: var(--primary-color);
+}

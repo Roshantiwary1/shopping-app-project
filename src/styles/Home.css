@@ -1,0 +1,105 @@
+.hero__section{
+   background:#d6e5fb;
+   margin-bottom: 2rem;
+}
+
+.hero__content h2{
+    color: #0a1d37;;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+
+.hero__content p{
+    color: #0a1d37;
+    line-height: 28px;
+}
+
+.buy__btn{
+    outline: none;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: #0a1d37;
+    
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 40px;
+}
+
+.buy__btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.hero__content{
+    padding: 45px;
+}
+
+.timer__counter{
+    height: 300px;
+    background-color: var(--primary-color);
+}
+
+.timer__counter img{
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.store__btn{
+    outline: none;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: #f7f8fa;
+    cursor: pointer;
+    font-size: 1rem; 
+    margin-top: 30px;
+}
+
+.store__btn a{
+   color: var(--primary-color);
+   font-weight: 600;
+}
+
+.store__btn a:hover{
+    color: inherit;
+}
+
+@media only screen and (max-width:992px){
+    .hero__content h2{
+            font-size: 2rem;
+        }
+        .section__title{
+            font-size: 1.7rem;
+        }
+
+}
+@media only screen and (max-width:768px){
+    .hero__content h2{
+        font-size: 1.6rem;
+    }
+    .hero__content p{
+        font-size: .9rem;
+    }
+    .buy__btn{
+        font-size: .8rem;
+    }
+    .section__title{
+        font-size: 1.4rem;
+    }
+    section{
+        padding: 30px 0px !important;
+    }
+}
+
+@media only screen and (max-width:576px){
+    .hero__content{
+        padding-top: 0;
+        margin-bottom: 40px;
+    }
+    .counter__img{
+        display: none;
+    }
+}
