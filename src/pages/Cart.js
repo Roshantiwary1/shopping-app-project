@@ -19,14 +19,14 @@ const Cart = () => {
   return (
     <Helmet title='Cart'>
     <CommonSection title='Shopping Cart'/>
-      <section>
+      <section >
         <Container>
           <Row>
             <Col lg="9">
             {CartItems.length===0 ? <h2 className='text-center mt-3 mb-3 fs-3 heading'>No Item Added In Cart</h2>:
              (<table className="table bordered">
                 <thead>
-                  <tr>
+                  <tr className='tuble'>
                     <th>Image</th>
                     <th>Title</th>
                     <th>Price</th>
@@ -36,7 +36,7 @@ const Cart = () => {
                   </thead>
                   <tbody>
                  {CartItems.map((item,index)=>(
-                   <Tr key={index} item={item}></Tr>
+                   <Tr className='teble' key={index} item={item}></Tr>
                  ))}
                   </tbody>
                </table>)

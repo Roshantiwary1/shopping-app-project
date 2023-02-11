@@ -20,3 +20,18 @@ td,th{
     font-weight: 600;
     color: var(--primary-color);
 }
+
+@media only screen and (max-width:479px){
+ .tuble th{
+    padding: 0!important;
+    font-size: .9rem !important;
+ }   
+ .teble td{
+    font-size: .8rem !important;
+ }
+ .teble td .btn{
+    font-size: .8rem!important;
+    padding: 4px !important;
+    padding-top: 1px !important;
+ }
+}

@@ -86,3 +86,81 @@ background-color: var(--card-bg-02);
 .admin__navigation ul li a{
     color: var(--primary-color);
 }
+
+@media only screen and (max-width:992px){
+    .admin__navigation{
+        padding: 0;
+    }
+}
+@media only screen and (max-width:768px){
+    .admin__navigation{
+        padding: 0;
+    }
+    .admin__navigation ul{
+        column-gap: 2rem !important;
+    }
+    .admin__nav-top{
+        width: 100% !important;
+        display: flex !important;
+        justify-content: flex-start !important;
+        margin-left: 0 !important;
+        column-gap: 1rem!important;
+    }
+    .admin__nav__top-right{
+        column-gap: 1rem !important;
+    }
+}
+@media only screen and (max-width:576px){
+    .admin__navigation{
+        padding: 0;
+    }
+    .admin__navigation ul{
+        column-gap: 1rem !important;
+        display: flex ;
+        justify-content: flex-start;
+        padding: 0 !important;
+    }
+    .admin__nav-top{
+        width: 100%!important;
+        display: flex!important;
+        justify-content: flex-start!important;
+        margin-left: 0 !important;
+        column-gap: 1rem !important;
+    }
+    .admin__nav__top-right{
+        column-gap: 1rem !important;
+    }
+}
+@media only screen and (max-width:490px){
+    .admin__navigation{
+        padding: 0;
+    }
+    .admin__navigation ul{
+        column-gap:.3rem !important;
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 !important;
+    }
+    .admin__nav-top{
+        width: 100% !important;
+        display: flex!important;
+        justify-content: flex-start!important;
+        margin-left: 0 !important;
+        column-gap: .5rem !important;
+    }
+    .admin__nav__top-right{
+        column-gap: 1rem !important;
+    }
+    
+.admin__navigation ul li{
+    font-size: .8rem !important;
+    margin-right: 4px !important;
+}
+.admin__nav__top-right span{
+    font-size: 1rem !important;
+}
+.admin__nav__top-right span img{
+    width: 1rem!important;
+    height: 1rem!important;
+}
+}

@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Col, Container, Row} from 'reactstrap';
 import useGetData from './../custom-hooks/useGetData';
 import { db } from '../firebase/firebase';
 import {doc,deleteDoc} from 'firebase/firestore'
 import { toast } from 'react-toastify';
+import "../styles/Cart.css"
 
 export const AllProducts = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
 
   const deleteProduct=async(id)=>{
     await deleteDoc(doc(db,'products',id))
@@ -20,7 +25,7 @@ export const AllProducts = () => {
           <Col lg='12'>
           {loading?<h4 className='pt-4'>Loading......</h4>:(<table className='table'>
               <thead>
-                <tr>
+                <tr className='tuble'>
                   <th>Image</th>
                   <th>Title</th>
                   <th>Category</th>
@@ -30,7 +35,7 @@ export const AllProducts = () => {
               </thead>
               <tbody>
               {productsData.map((data,index)=>(
-                <tr key={index}>
+                <tr className='teble' key={index}>
                   <td><img src={data.imgURL} alt="product" /></td>
                   <td>{data.title}</td>
                   <td>{data.category}</td>
